@@ -1,0 +1,40 @@
+body {margin:0;
+background-image: linear-gradient(to right, forestgreen , dodgerblue);
+font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: dodgerblue;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+li a:hover:not(.active) {
+  background-color: darkblue;
+}
+
+.active {
+  background-color: skyblue;
+}
+* {
+  font-size: 100%;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
