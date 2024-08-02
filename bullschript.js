@@ -42,6 +42,6 @@ var showDiv =(showdiv)=>{
   if(!!showdiv[0]){
     showdiv[0].setAttribute('style', "");
     if(!!showdiv[1]){showdiv[1].setAttribute('class', "active");};
-    if(!!showdiv[2]){document.title = "ThatTeeterCat | "+showdiv[2]};
+    if(!!showdiv[2]){document.title = "ThatTeeterCat | "+showdiv[2]}else{document.title = "ThatTeeterCat | 404"};
   };
 };
