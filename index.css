@@ -1,9 +1,17 @@
+@font-face {
+  font-family: "ComicSans";
+  src:
+    local("Comic Sans MS"),
+	local("Comic Sans"),
+    url("https://lunariger.github.io/assets/fonts/comic_sans/comic.ttf") format('truetype')
+}
+body, nav li a, .holder, * {font-family: "ComicSans", cursive;}
+
 body {margin:0;
 background-image: linear-gradient(to right, forestgreen , dodgerblue);
-font-family: "Comic Sans MS", "Comic Sans", cursive;
 }
 
-ul {
+nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -14,27 +22,27 @@ ul {
   width: 100%;
 }
 
-li {
+nav li {
   float: left;
 }
 
-li a {
+nav li a {
   display: block;
   color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-family: "Comic Sans MS", "Comic Sans", cursive;
 }
 
-li a:hover:not(.active) {
+nav li a:hover:not(.active) {
   background-color: darkblue;
 }
 
+.holder {
+	padding:20px;
+	margin-top:30px;
+	text-align:center;
+}
 .active {
   background-color: skyblue;
-}
-* {
-  font-size: 100%;
-  font-family: "Comic Sans MS", "Comic Sans", cursive;
 }

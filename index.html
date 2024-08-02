@@ -1,22 +1,81 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="icon" type="image/x-icon" href="/favicon.ico?">
-        <title>ThatTeeterCat | Home</title>
-  <link rel="stylesheet" href="index.css">
+  <link rel="icon" type="image/x-icon" href="./favicon.ico?">
+  <title>ThatTeeterCat</title>
+  <link rel="stylesheet" href="./index.css">
+  <script src="./bullschript.js"></script>
 <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
 
 </head>
 <body>
-<ul>
-  <li><a class="active" href="#home">Home</a></li>
-  <li><a href="#news">News</a></li>
-  <li><a href="#contact">Contact</a></li>
-  <li><a href="#about">About</a></li>
-</ul>
-<div style="padding:20px;margin-top:30px;height:1500px;font-family:"Comic Sans MS", "Comic Sans", "default";>
+<nav>
+  <ul>
+    <li><a href="#home" id="homebtn">Home</a></li>
+    <li><a href="#news" id="newsbtn">News</a></li>
+    <li><a href="#contact" id="contactbtn">Contact</a></li>
+    <li><a href="#about" id="aboutbtn">About</a></li>
+  </ul>
+</nav>
+<div id="head" class="holder">
  <h1>That Teeter Cat</h1>
- <img style="border-radius: 50%;" src="https://lunartiger.github.io/assets/img/teeter/teeter.png">
-<!-- <iframe src="https://streamgood.gg/clips/player?mode=random&current_game=false&info=true&volume=75&max_length=60&filter_long_videos=false&show_timer=false&recent_clips=0&c>
+ <img style="border-radius: 50%;height:auto;max-width:90%;" src="https://lunartiger.github.io/assets/img/teeter/teeter.png">
+<!-- <iframe src="https://streamgood.gg/clips/player?mode=random&current_game=false&info=true&volume=75&max_length=60&filter_long_videos=false&show_timer=false&recent_clips=0&c> -->
+</div>
+<!-- the home area -->
+<div id="home" class="holder" style="display: none;">
+  <div style="width:420px;max-width:90%;margin-left:auto;margin-right:auto;text-align:left;">
+    <p>ThatTeeterKid, a.k.a. ThatTeeterCat, a.k.a. Discord Dino Daddie, a.k.a. The Slickmeister is the most adorable streamer you'll ever have the fortune of laying your eyes on. Here you can find out everything you wanted to know about him.</p>
+  </div>
+</div>
+<!-- the news area -->
+<div id="news" class="holder" style="display: none;">
+  <div style="width:420px;max-width:90%;margin-left:auto;margin-right:auto;text-align:left;">
+    <ul>
+      <li>The donation goal for the singing stream was readched! The stream time will be announced soon!</li>
+      <li>Teeter is moving house soon into his own place!</li>
+    </ul>
+  </div>
+</div>
+<!-- the contact area -->
+<div id="contact" class="holder" style="display: none;">
+  <h2>Socials</h2>
+  <div style="width:fit-content;max-width:90%;margin-left:auto;margin-right:auto;">
+    <nav>
+      <ul style="position:relative;">
+        <li><a href="https://twitch.tv/thatteeterkid">Twitch</a></li>
+        <li><a href="https://discord.gg/ehKvhpDe8R">Discord</a></li>
+        <li><a href="https://tiktok.com/@thatteeterkid.ttv">TikTok</a></li>
+        <li><a href="https://www.instagram.com/thatteeterkid.ttv">Instagram</a></li>
+        <li><a href="https://youtube.com/@thatteeterkid4457">YouTube</a></li>
+      </ul>
+    </nav>
+  </div>
+  <h2>Donations</h2>
+  <div style="width:fit-content;max-width:90%;margin-left:auto;margin-right:auto;">
+    <nav>
+      <ul style="position:relative;">
+        <li><a href="https://streamlabs.com/thatteeterkid/tip">Streamlabs</a></li>
+        <li><a href="https://cash.app/$ThatTeeterKid">CashApp</a></li>
+      </ul>
+    </nav>
+  </div>
+  <h2>Wishlists</h2>
+  <div style="width:fit-content;max-width:90%;margin-left:auto;margin-right:auto;">
+    <nav>
+      <ul style="position:relative;">
+        <li><a href="https://throne.com/thatteeterkid">Throne</a></li>
+        <li><a href="https://www.amazon.com/hz/wishlist/ls/2ZQ87VYRB5OUW?ref_=wl_share">Amazon</a></li>
+      </ul>
+    </nav>
+  </div>
+</div>
+<!-- the about area -->
+<div id="about" class="holder" style="display: none;">
+  <h1>Coming Soon!</h1>
+</div>
+<!-- the not found area -->
+<div id="error" class="holder" style="display: none;">
+  <h1>Error: not found</h1>
 </div>
 </body>
