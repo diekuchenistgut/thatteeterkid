@@ -1,7 +1,4 @@
-addEventListener("DOMContentLoaded", () => {
-  const showdiv = getShown();
-  showDiv(showdiv);
-});
+addEventListener("DOMContentLoaded", () => {showDiv(getShown());});
 
 addEventListener("hashchange", () => {
   const elements = [
