@@ -11,6 +11,16 @@ body {margin:0;
 background-image: linear-gradient(to right, forestgreen , dodgerblue);
 }
 
+ul:before{
+    content:attr(aria-label);
+    font-size:120%;
+    font-weight:bold;
+    margin-left:-15px;
+}
+ul.titled{
+    list-style-type: none;
+}
+
 nav ul {
   list-style-type: none;
   margin: 0;
