@@ -2,11 +2,11 @@ addEventListener("DOMContentLoaded", () => {showDiv(getShown());});
 
 addEventListener("hashchange", () => {
   const elements = [
-    [document.getElementById("about"), document.getElementById("aboutbtn")],
-    [document.getElementById("contact"), document.getElementById("contactbtn")],
-    [document.getElementById("news"), document.getElementById("newsbtn")],
-    [document.getElementById("home"), document.getElementById("homebtn")],
-    [document.getElementById("error")]
+    [document.getElementById("aboutel"), document.getElementById("aboutbtn")],
+    [document.getElementById("contactel"), document.getElementById("contactbtn")],
+    [document.getElementById("newsel"), document.getElementById("newsbtn")],
+    [document.getElementById("homeel"), document.getElementById("homebtn")],
+    [document.getElementById("errorel")]
    ];
   const showdiv = getShown();
   if(!!showdiv[0]){
@@ -25,15 +25,15 @@ var getShown =()=>{
   var showdiv = null;
   switch(true){
     case hash==='about':
-      showdiv = [document.getElementById("about"), document.getElementById("aboutbtn"), "About"]; break;
+      showdiv = [document.getElementById("aboutel"), document.getElementById("aboutbtn"), "About"]; break;
     case hash==='contact':
-      showdiv = [document.getElementById("contact"), document.getElementById("contactbtn"), "Contact"]; break;
+      showdiv = [document.getElementById("contactel"), document.getElementById("contactbtn"), "Contact"]; break;
     case hash==='news':
-      showdiv = [document.getElementById("news"), document.getElementById("newsbtn"), "News"]; break;
+      showdiv = [document.getElementById("newsel"), document.getElementById("newsbtn"), "News"]; break;
     case hash==='home' || !hash || hash==="":
-      showdiv = [document.getElementById("home"), document.getElementById("homebtn"), "Home"]; break;
+      showdiv = [document.getElementById("homeel"), document.getElementById("homebtn"), "Home"]; break;
     default:
-      showdiv = [document.getElementById("error")]; break;
+      showdiv = [document.getElementById("errorel")]; break;
   };
   return showdiv;
 };
