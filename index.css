@@ -5,7 +5,7 @@
 	local("Comic Sans"),
     url("https://lunariger.github.io/assets/fonts/comic_sans/comic.ttf") format('truetype')
 }
-body, nav li a, .holder, * {font-family: "ComicSans", cursive;}
+body, nav li a, .holder, * {font-family: "ComicSans", sans-serif;}
 
 body {margin:0;
 background-image: linear-gradient(to right, forestgreen , dodgerblue);
