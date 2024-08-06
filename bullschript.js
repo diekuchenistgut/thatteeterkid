@@ -24,13 +24,13 @@ var getShown =()=>{
   const hash = window.location.hash.substr(1).toLowerCase();
   var showdiv = null;
   switch(true){
-    case hash==='about':
+    case hash==='about' || hash==='a':
       showdiv = [document.getElementById("aboutel"), document.getElementById("aboutbtn"), "About"]; break;
-    case hash==='contact':
+    case hash==='contact' || hash==='c':
       showdiv = [document.getElementById("contactel"), document.getElementById("contactbtn"), "Contact"]; break;
-    case hash==='news':
+    case hash==='news' || hash==='n':
       showdiv = [document.getElementById("newsel"), document.getElementById("newsbtn"), "News"]; break;
-    case hash==='home' || !hash || hash==="":
+    case hash==='home' || hash==='h' || hash==="" || !hash:
       showdiv = [document.getElementById("homeel"), document.getElementById("homebtn"), "Home"]; break;
     default:
       showdiv = [document.getElementById("errorel")]; break;
